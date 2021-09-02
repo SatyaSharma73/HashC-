@@ -1,7 +1,18 @@
+/*
+input: -97 50
+output :50
+
+explanation:
+largest prime no between -97 to 57
+is 47
+so abs(-97+47)=50
+*/
+
+
 #include<iostream>
 #include<vector>
 #include<algorithm>
-
+#include<cmath>
 using namespace std;
  
 bool isPrime(int num)
@@ -44,10 +55,11 @@ int main(void){
         }
     }
 
-sort(prime.begin(),prime.end());
-int first=*prime.begin();
+
+// sort(prime.begin(),prime.end());
+// int first=*prime.begin();
 reverse(prime.begin(),prime.end());
 int last=*prime.begin();
-cout<<first+last;
+cout<<abs(n+last);
 
 }
