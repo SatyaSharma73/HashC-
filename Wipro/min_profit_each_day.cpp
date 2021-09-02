@@ -36,7 +36,7 @@ vector<int>ans;
 
 for(int i=0;i<m;i++){
     vector<int>minval;
-   for(int j=i;j<vs.size();j=j+3){
+   for(int j=i;j<vs.size();j=j+m){
     minval.push_back(vs[j]);
    }
    int min=*min_element(minval.begin(),minval.end());
